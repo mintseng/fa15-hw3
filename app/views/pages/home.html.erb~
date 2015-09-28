@@ -1,0 +1,16 @@
+<h1>Ruby Decal, Homework 3</h1>
+
+<% (0..5).each do |u| %>
+  <% (User.all).each do |n| %>
+   <%= "#{n.username}" %>
+   </br>
+   <%= "#{n.email}" %>
+   </br>
+   <%= "#{n.age}" %>
+  <% end %>
+
+  <% (Cat.all).each do |i| %>
+  <%= "#{i.name}" %>
+  </br>
+  <% end %>
+<% end %>

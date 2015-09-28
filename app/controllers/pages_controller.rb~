@@ -1,0 +1,5 @@
+class PagesController < ApplicationController
+	def home
+        u = User.new
+	end
+end

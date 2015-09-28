@@ -1,0 +1,14 @@
+<h1> Users </h1>
+<% @users.each do |user| %>
+   <%=user[:nickname]%>
+<% end %>
+
+<h1> Cats </h1>
+<% @cats.each do |cat| %>
+   <%=cat[:name]%>
+<% end %>
+
+<h1> Todos </h1>
+<% @todos.select{|e| e[:finished]}.each do |todo| %>
+    <%=todo[:tasks]%>
+<% end %>
